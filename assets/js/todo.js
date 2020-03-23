@@ -1,5 +1,7 @@
-if(jQuery){
-    alert("jQuery installed!");
-}else{
-    alert("js is installed but no jQuery");
-}
+$("li").click(function(){
+    $(this).toggleClass("done");
+});
+$("span").click(function(e){
+    $(this).parent().fadeOut();
+    e.stopPropagation();
+});
